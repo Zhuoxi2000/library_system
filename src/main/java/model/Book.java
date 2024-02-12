@@ -1,15 +1,13 @@
 public class Book {
-    private String bookId;
     private String title;
     private String author;
     private String isbn;
-    private int quantity;
+    private int quantityInStock;
     private int borrowed;
     private String status;
 
-    // 构造函数
-    public Book(String bookId, String title, String author, String isbn, int quantity, int borrowed, String status) {
-        this.bookId = bookId;
+    // Constructor
+    public Book(String title, String author, String isbn, int quantityInStock, int borrowed, String status) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
@@ -18,15 +16,7 @@ public class Book {
         this.status = status;
     }
 
-    // Getter 和 Setter 方法
-    public String getBookId() {
-        return bookId;
-    }
-
-    public void setBookId(String bookId) {
-        this.bookId = bookId;
-    }
-
+    // Getter && Setter Method
     public String getTitle() {
         return title;
     }
@@ -52,11 +42,11 @@ public class Book {
     }
 
     public int getQuantity() {
-        return quantity;
+        return quantityInStock;
     }
 
     public void setQuantity(int quantity) {
-        this.quantity = quantity;
+        this.quantityInStock = quantity;
     }
 
     public int getBorrowed() {
